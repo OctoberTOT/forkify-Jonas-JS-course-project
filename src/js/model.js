@@ -1,7 +1,7 @@
 // import { async } from 'regenerator-runtime';
 
 import { API_URL, RES_PER_PAGE, KEY } from './config.js';
-// import { getJSON, sendJSON } from './helperFunction.js';
+
 import { AJAX } from './helperFunction.js';
 //储存有关application的所有数据
 export const state = {
@@ -44,7 +44,7 @@ export const loadRecipe = async function (id) {
         else
             state.recipe.bookmarked = false;
 
-        // console.log(state.recipe);
+
     } catch (err) {
         console.error(`${err}🥲🥲🥲`);
         throw err;
